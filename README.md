@@ -3,7 +3,7 @@ Some modification to ManageEngine Endpoint bat (and a new one) to be able to aut
 
 ## why the heck not the official way?
 
-the vbs file gpo didnt work here, and while trying to use the setup.bat in a modified way with pushd/popd (to get it run under unc) we got we got errors like this:
+the vbs file gpo didnt work here, and while trying to use the setup.bat in a modified way with pushd/popd (to get it run from an UNC-Path) we got we got errors like this:
 
 
 ```
