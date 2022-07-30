@@ -1,6 +1,24 @@
 # ManageEngineEndpointSetup
 Some modification to ManageEngine Endpoint bat (and a new one) to be able to auto install it (eg. via GPO), bad visual basic stuff didn't work at our site
 
+## why the heck not the official way?
+
+the vbs file gpo didnt work here, and while trying to use the setup.bat in a modified way with pushd/popd (to get it run under unc) we got we got errors like this:
+
+
+```
+Endpoint Central Agent installation failed. ErrorCode: 1603
+
+```
+
+and that in the event viewer:
+```
+Product: ManageEngine Endpoint Central - Agent -- Error 1722. There is a problem with this Windows Installer package. A program run as part of the setup did not finish as expected. Contact your support personnel or package vendor. Action _7D73D36E_09A6_4568_8914_071BDC3EB653, location: C:\Program Files (x86)\DesktopCentral_Agent\bin\dcagentregister.exe, command: -i dc
+```
+
+you may also can work around other problems like vbs is blocked by security policies/av-software...
+
+
 # how to set it up
 
 1. download your deployment package from your endpoint system from like https://{your endpoint hostname/ip}:8383/webclient#/uems/agent/ds-deployment-help
