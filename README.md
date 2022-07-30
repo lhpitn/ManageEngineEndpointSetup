@@ -19,5 +19,5 @@ Some modification to ManageEngine Endpoint bat (and a new one) to be able to aut
 6. get your devices to run that file as admin/system (however you like it), as group policy system level (not user) logon script, remote powershell, your old remote execution stuff, or anything else you like (we are using a group policy and the purpose of building this script was that the official suggested gpo didnt work relayabley)
 
 
-licence: 
+## licence: 
 this mod is free to use for everyone (public domain) but if you improve it please send me an merge request or issue with your improvements or share it otherwiese to the public (like GPL but you can brake it) ... NO WARANTY OF ANY KIND IS GIVEN, but feel free to leave an issue if you got difficultys setting it up..
